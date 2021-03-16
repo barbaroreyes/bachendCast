@@ -12,7 +12,7 @@ const cors = require('cors')
 
 
 
-app.use(cors())
+app.use(cors({origin:'*'}))
 app.use(express.json())
 app.use('/movies', moviesRouter)
 app.use('/theaters',theatersRouter)
